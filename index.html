@@ -2,11 +2,68 @@
 <html>
    <head>
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-      <meta name="" content="">
-      <title>Empresa</title>
+      <meta name="autor" content="Javier Quintero">
+      <style>
+         :root{
+            --bgBody:#ccc;
+            --bgImg:#fff;
+            --bgName:#eee;
+         }
+         body{
+            background: var(--bgBody);
+         }
+         .caja{
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .oC{
+            position: relative;
+         }
+         .iP{
+            background: var(--bgImg);
+            border-radius: 50%;
+            width: 320px;
+            
+         }
+         .imgNombre{
+            background: var(--bgName);
+            border-radius: 20px;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+         }
+         .ani{
+            right:-3em;
+            transform: rotate(90deg);
+            transition: 400ms;
+            color: red;
+         }
+         .oC:hover .ani{
+            transform: rotate(0deg);
+            color: black;
+         }
+      </style>
+      <title>Desarrollo</title>
    </head>
    <body>
-      <h1>Empresa</h1>
-      <p>Este documento es realizado con fin de aprendizaje del control de versiones</p> 
+      <header>
+         <div class="logoE">
+            
+         </div>
+         <nav class="menuDocument">
+         
+         </nav>
+      </header>
+         
+      <div class="caja">
+         <div class="oC">
+            
+         <img class="myPhoto iP" src="img/Jum.png" alt="Javier Quintero Desarrollador" width="100%"/>
+         <p class="imgNombre ani">Javier Quintero</p>
+         </div>
+      </div>
    </body>
 </html>
