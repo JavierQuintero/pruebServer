@@ -3,11 +3,21 @@
    <head>
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <meta name="autor" content="Javier Quintero">
+      <!-- Fuentes -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
       <style>
          :root{
+            /* Colors */
             --bgBody:#ccc;
             --bgImg:#fff;
             --bgName:#eee;
+            --d:#222;
+            --fT:#d2c634;
+            /* Fuentes */
+            --ff: 'Odibee Sans';
+            --ff2: 'Ubuntu';
          }
          body{
             background: var(--bgBody);
@@ -30,20 +40,52 @@
          }
          .imgNombre{
             background: var(--bgName);
+            font-family: var(--ff), cursive;
+            font-size: 1.75em;
             border-radius: 20px;
             padding: 20px;
             position: absolute;
             bottom: 0;
          }
          .ani{
-            right:-3em;
+            right:0;
             transform: rotate(90deg);
+            transform-origin: right;
             transition: 400ms;
-            color: red;
+            opacity: 0;
          }
          .oC:hover .ani{
             transform: rotate(0deg);
-            color: black;
+            opacity: 1;
+         }
+         /* section2 */
+         .pre{
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 1.5px 3px 20px #333;
+         }
+         .tarjePre{
+            background: var(--fT);
+            color: var(--d);
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-family: var(--ff2), sans-serif;
+            width: 75%;
+            max-width: 550px;
+            letter-spacing: 0.5px;
+         }
+         .t{
+            transition: 0.5s;
+            opacity: 0;
+         }
+            /* animacion */
+
+         .haciArriba{
+            animation: mostrarArriba 1s;
+         }
+         @keyframes mostrarArriba {
+            0%{transform: translateY(60px);}
+            100%{transform: translateY(0);}
          }
       </style>
       <title>Desarrollo</title>
@@ -58,12 +100,28 @@
          </nav>
       </header>
          
-      <div class="caja">
+      <section class="caja">
          <div class="oC">
             
          <img class="myPhoto iP" src="img/Jum.png" alt="Javier Quintero Desarrollador" width="100%"/>
          <p class="imgNombre ani">Javier Quintero</p>
          </div>
-      </div>
+      </section>
+<!-- section2 la tarjeta -->
+      <section class="caja pre">
+         <div class="tarjePre">
+            <h2 class="t">Lorem, ipsum dolor.</h2>
+            <p class="t">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi commodi adipisci sint ea numquam! Cum, necessitatibus! Assumenda asperiores facere ipsum.</p>
+            <p class="t">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi commodi adipisci sint ea numquam! Cum, necessitatibus! Assumenda asperiores facere ipsum.</p>
+               <ol class="t">
+                  <li>Selector</li>
+                  <li>Selector</li>
+                  <li>Selector</li>
+               </ol>
+            <p class="t">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi commodi adipisci sint ea numquam! Cum, necessitatibus! Assumenda asperiores facere ipsum.</p>
+         </div>
+      </section>
+      
+      <script src="trab.js"></script>
    </body>
 </html>
