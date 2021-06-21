@@ -11,9 +11,10 @@
 .tarjeta{
     width: 20em;
     height: 28.75em;
-    background: rgba(136, 117, 117, 0.4);
+    /* background: rgba(136, 117, 117, 0.4); */
     border-radius: 10px;
     position: relative;
+    box-shadow: 0px 0px 15px #333;
 }
 .tarjeta .contImg{
     height: 100%;
@@ -23,15 +24,28 @@
     align-items: center;
 }
 .tarjeta .img{
-    background: #fff;
-    width: 150px;
-    height: 150px;
+    /* background: #fff; */
+    width: 200px;
+    height: 200px;
 }
-.tarjeta .clip{
-    background: #fff;
-    border: 1px solid #000;
+.tarjeta .contImg .clip{
+    padding: 15px;
+    /* background: #fff;
+    border: 1px solid #000; */
     width: 85%;
     height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta .contImg .clip > *{
+    font-family: 'Ubuntu';
+}
+
+.tarjeta .contImg .clip > p{
+    font-weight: 500;
+    text-align: justify;
 }
 @media screen and (max-width: 720px) {
     .G{
