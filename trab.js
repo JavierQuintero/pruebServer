@@ -4,7 +4,7 @@ function mostrarScroll(){
     
     for(i=0;i<animado.length;i++){
         let alturaAnimado = animado[i].offsetTop;
-        if(alturaAnimado - 450 < scrollTop){
+        if(alturaAnimado - 650 < scrollTop){
                 animado[i].style.opacity = 1; 
                 animado[i].classList.add('haciArriba');  
         }else{
