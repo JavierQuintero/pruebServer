@@ -1,0 +1,39 @@
+header{
+    --colorTexto: #fff;
+    --colorFondo: rgba(255, 0, 0, 0);
+    
+    font-family: Ubuntu;
+    position: fixed;
+    z-index: 100;
+    background: var(--colorFondo);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 250px; */
+}
+header .logoE h2{
+    font-size: 2.5em;
+    margin: 12px 0 5px 0;
+    color: var(--colorTexto);
+}
+header .logoE h1{
+    margin-top: 0;
+    font-size: 1.3em;
+    color: var(--colorTexto);
+}
+
+/*Bototnes de navegacion*/
+header .menu_document .contenedor_menu{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+header .menu_document .contenedor_menu li {
+    font-size: 1.5em;
+}
+header .menu_document .contenedor_menu li a{
+    text-decoration: none;
+    margin-right: 3px;
+    color: var(--colorTexto);
+}
