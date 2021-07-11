@@ -1,6 +1,6 @@
 .G{
-    margin: 5px 0 15px 0;
-    width: 100%;
+    margin: 5px auto;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -8,7 +8,9 @@
     overflow: hidden;
  }
  .G .tarjeta.t{
-     margin: 15px;
+    margin: 15px;
+    max-width: 340px;
+    flex-grow: 2;
  }
  
 .tarjeta{
@@ -41,7 +43,9 @@
 .tarjeta .contImg .clip > *{
     font-family: 'Ubuntu';
 }
-
+.tarjeta .contImg .clip > h2{
+    text-align: center;
+}
 .tarjeta .contImg .clip > p{
     font-weight: 500;
     text-align: justify;
@@ -49,6 +53,7 @@
 @media screen and (max-width: 720px) {
     .G{
         width: 100%;
+
         grid-template-columns: 1fr;
         gap: 10px;
         overflow: visible;
