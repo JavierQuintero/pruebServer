@@ -47,12 +47,13 @@ footer{
     font-size: 22px;
 }
 
-.row{
+.row, .row2{
     margin-top: 20px;
     display: flex;
 }
 
-.row img{
+.row img,
+.row2 img{
     width: 36px;
     height: 36px;
 }
@@ -74,16 +75,6 @@ footer{
 
 .colum3 h1{
     font-size: 22px;
-}
-
-.row2{
-    margin-top: 20px;
-    display: flex;
-}
-
-.row2 img{
-    width: 36px;
-    height: 36px;
 }
 
 .row2 label{
