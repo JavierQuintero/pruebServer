@@ -73,7 +73,7 @@ header .menu_document.show{
     header .logoE h2{font-size: 1.9em;}
     header .logoE h1{font-weight: 300;}
     header{
-        height: 85px;
+        height: 155px;
     }
     header .btn_menu{
         display: inline-flex;
@@ -113,6 +113,6 @@ header .menu_document.show{
     }
     header .menu_document .contenedor_menu{
         overflow: scroll;
-        height: calc(100% - 85px);
+        height: calc(100% - 155px);
     }
 }
